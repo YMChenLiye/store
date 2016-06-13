@@ -95,14 +95,6 @@ set fileencodings=utf-8,ucs-bom,chinese
  "设置VIM记录的历史数
  set history=400
 
-set foldenable " 开始折叠
-set foldmethod=syntax " 设置语法折叠
-set foldcolumn=0 " 设置折叠区域的宽度
-setlocal foldlevel=1 " 设置折叠层数为
-" set foldclose=all " 设置为自动关闭折叠
- nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
-" 用空格键来开关折叠
-
 
 
  "let g:formatdef_clangformat_objc = '"clang-format -style=file"'
